@@ -52,10 +52,16 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
@@ -63,7 +69,7 @@
           </button>
         </div>
       </section>
-      <section class="features-section">
+      <section class="features-section hidden">
         <div class="container">
           <h2 id="features" class="visually-hidden">Features</h2>
           <ul class="features-list">
@@ -118,7 +124,7 @@
           </ul>
         </div>
       </section>
-      <section class="our-team">
+      <section class="our-team hidden">
         <div class="container">
           <h2 id="team" class="our-team-title">Our Team</h2>
           <ul class="our-team-list">
@@ -293,7 +299,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 id="portfolio" class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -418,7 +424,7 @@
 
     <!-- FOOTER -->
 
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-content">
         <div class="logo-text">
           <a href="./index.html" class="logo footer-logo"
@@ -488,7 +494,7 @@
 
     <!-- REGION BACKDROP -->
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-btn-icon" width="8" height="8">
@@ -583,5 +589,27 @@
     <script src="./js/modal.js"></script>
 
     <!-- ENDREGION BACKDROP -->
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu is-open">
+      <button class="btn-close-mob" type="button"></button>
+      <svg class="close-btn-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+      <nav class="mob-nav">
+        <ul class="mob-nav-list">
+          <li class="mob-nav-item">
+            <a href="./index.html" class="item-mob-link current">Studio</a>
+          </li>
+          <li class="mob-nav-item">
+            <a href="" class="item-mob-link">Portfolio</a>
+          </li>
+          <li class="mob-nav-item">
+            <a href="" class="item-mob-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ENDREGION MOBILE MENU -->
   </body>
 </html>
