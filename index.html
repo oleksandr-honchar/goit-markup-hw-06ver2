@@ -396,12 +396,40 @@
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="thumb">
-                <img
-                  src="./images/banking-app.jpg"
-                  alt="banking app"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <!-- Image for desktop (1x and 2x) -->
+                  <source
+                    srcset="./images/banking-app-desktop@1x.jpg 1x, ./images/b"
+                    media="(min-width: 1158px)"
+                  />
+
+                  <!-- Image for tablet (1x and 2x) -->
+                  <source
+                    srcset="
+                      ./images/banking-app-tablet@1x.jpg 1x,
+                      ./images/banking-app-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1157px)"
+                  />
+
+                  <!-- Image for mobile (1x and 2x) -->
+                  <source
+                    srcset="
+                      ./images/banking-app-mobile@1x.jpg 1x,
+                      ./images/banking-app-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <!-- Fallback image for browsers that don't support <picture> -->
+                  <img
+                    src="./images/banking-app-desktop@1x.jpg"
+                    alt="banking app"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -585,7 +613,7 @@
 
     <!-- REGION BACKDROP -->
 
-    <div class="backdrop hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-btn-icon" width="8" height="8">
@@ -665,10 +693,14 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="accept-terms link" href="./index.html"
-                >Privacy Policy
-              </a>
+              <span class="accept-terms">
+                <p class="accept-terms-text">
+                  I accept the terms and conditions of the
+                </p>
+                <a class="accept-terms-link" href="./index.html"
+                  >Privacy Policy
+                </a>
+              </span>
             </label>
           </div>
 
