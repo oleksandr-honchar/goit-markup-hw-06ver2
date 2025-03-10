@@ -534,6 +534,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .features-list-text {
@@ -549,6 +550,10 @@ button {
     align-items: center;
     gap: 24px;
     row-gap: 72px;
+  }
+
+  .features-list-title {
+    text-align: left;
   }
 
   .features-list-item {
@@ -622,7 +627,7 @@ button {
 }
 
 .our-team-list-item {
-  background-color: #f4f4fd;
+  background-color: #ffffff;
   width: 264px;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -691,7 +696,6 @@ button {
 
 @media screen and (min-width: 1158px) {
   .our-team {
-    background: #f4f4fd;
     padding: 120px 0;
   }
 
@@ -967,7 +971,7 @@ button {
   }
 
   .footer-content {
-    padding: 0 108px;
+    width: 584px;
     row-gap: 72px;
     column-gap: 24px;
     align-items: baseline;
@@ -999,6 +1003,7 @@ button {
 @media screen and (min-width: 1158px) {
   .footer-content {
     padding: 0 15px;
+    width: 100%;
   }
 
   .social-list-link:hover,
